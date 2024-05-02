@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 
-class Nvh_form3 extends Component {
+class Nqh_form3 extends Component {
     constructor (props){
         super (props);
         this.state = {
-            studentName: "Nguyễn Văn Hiếu",
+            studentName: "Nguyễn Quang Huy",
             age: "21",
-            course: "Nvh-HTML5",
+            course: "Nqh-HTML5",
             gender:true
         }
     }    
 
-    NvhHandleChange = (event)=>{
+    NqhHandleChange = (event)=>{
         let name=event.target.name;
         let value=event.target.value;
         this.setState({
             [name]: value
     })
     }
-    NvhHandleSubmit = (event)=>{
+    NqhHandleSubmit = (event)=>{
         event.preventDefault();
         console.log(this.state);
         ///chuyển đổi dữ liệu lên app
@@ -32,15 +32,15 @@ class Nvh_form3 extends Component {
                         <label>Student Name: </label>
                         <input name='studentName'
                                 value={this.state.studentName}
-                                onChange={this.NvhHandleChange }/>
+                                onChange={this.NqhHandleChange }/>
                     </div>
                     <div>
                     <label>Age: </label>
                         <input name='age'
                                 value={this.state.age}
-                                onChange={this.NvhHandleChange }/>
+                                onChange={this.NqhHandleChange }/>
                     </div>
-                    <div onChange={this.NvhHandleChange }>
+                    <div onChange={this.NqhHandleChange }>
                         <label>Gender:</label>
                         <input type='radio' id='rdNam' name='gender' value={true}
                             defaultChecked={this.state.gender===true} />
@@ -52,14 +52,14 @@ class Nvh_form3 extends Component {
                     <div>
                     <label>Course</label>
                     <select value={this.state.course}
-                            onChange={this.NvhHandleChange}>
-                        <option value={"NvH-HTML5"}>Nvh-HTML5</option>
-                        <option value={"NvH-CSS3"}>Nvh-CSS3</option>
-                        <option value={"NvH-JS"}>Nvh-JS</option>
-                        <option value={"NvH-RJ"}>Nvh-ReactJs</option>
+                            onChange={this.NqhHandleChange}>
+                        <option value={"Nqh-HTML5"}>Nqh-HTML5</option>
+                        <option value={"Nqh-CSS3"}>Nqh-CSS3</option>
+                        <option value={"Nqh-JS"}>Nqh-JS</option>
+                        <option value={"Nqh-RJ"}>Nqh-ReactJs</option>
                     </select>
                     </div>
-                    <button onClick={this.NvhHandleChange}> Submit </button>
+                    <button onClick={this.NqhHandleChange}> Submit </button>
                 </form>
 
             </div>
@@ -67,4 +67,4 @@ class Nvh_form3 extends Component {
     }
 }
 
-export default Nvh_form3;
+export default Nqh_form3;

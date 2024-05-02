@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Nvh_form1 extends Component {
+class Nqh_form1 extends Component {
     constructor(props){
         super(props);
         this.state = {
-            studentName: "Nguyễn Văn Hiếu"
+            studentName: "Nguyễn Quang Huy"
         }      
     }
     // hàm sử lý sự kiện khi thay dổi dữu liệu trên text
@@ -36,4 +36,4 @@ class Nvh_form1 extends Component {
     }
 }
 
-export default Nvh_form1;
+export default Nqh_form1;

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Nvh_form1 from './Components/nvh_form1';
-import Nvh_form2 from './Components/Nvh_form2';
-import Nvh_form3 from './Components/Nvh_form3';
+import Nqh_form1 from './Components/Nqh_form1';
+import Nqh_form2 from './Components/Nqh_form2';
+import Nqh_form3 from './Components/Nqh_form3';
 
 class App extends Component {
-  NvhSubmit = (param)=>{
+  NqhSubmit = (param)=>{
     console.log("App",param);
   }
     
@@ -12,10 +12,10 @@ class App extends Component {
     return (
       <div>
         <h1>Controlled Component Reactj Form</h1>
-        <Nvh_form1 />
-        <Nvh_form2 />
+        <Nqh_form1 />
+        <Nqh_form2 />
         <hr />
-        <Nvh_form3 onSubmit={this.NvhSubmit}/>
+        <Nqh_form3 onSubmit={this.NqhSubmit}/>
       </div>
     );
   }
